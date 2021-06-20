@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package pb;
+option go_package = "./pb";
+
+service ProductInfo {
+  rpc addProduct(Product) returns (ProductID); // 在系统中创建新的商品
+  rpc getProduct(ProductID) returns (Product);  // 检索商品信息
+}
+
+// ProductID 是商品的唯一标识，是字符串类型的值
+// protocol buffers 库中提供了流行的消息类型 google.protobuf.StringValue
+message ProductID {
+  string value = 1;
+}
+
+// Product 自定义消息类型
+message Product {
+  string id = 1;  // 商品的唯一标识符
+  string name = 2; // 商品的名称
+  string description = 3; // 商品的描述
+  float price = 4; // 商品的价格
+}
