@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 	"net"
-	"productinfo/service/pb"
+	"product/service/pb"
 
 	"google.golang.org/grpc"
 )

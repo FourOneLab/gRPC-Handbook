@@ -3,8 +3,8 @@ dep:
 	go get -u github.com/golang/protobuf/protoc-gen-go
 
 gen:
-	protoc -I productinfo/service/pb product_info.proto --go_out=plugins=grpc:productinfo/service
+	protoc -I product/service/pb product_info.proto order_manager.proto --go_out=plugins=grpc:product/service
 
 build:
-	go build -i -v -o bin/server productinfo/service/main.go
-	go build -i -v -o bin/client productinfo/client/main.go
+	go build -i -v -o bin/server product/service/main.go
+	go build -i -v -o bin/client product/client/main.gocd
