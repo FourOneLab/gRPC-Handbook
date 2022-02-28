@@ -1,6 +1,6 @@
 # gRPC Handbook
 
-* [ReadMe](README.md)
+* [gRPC Handbook](README.md)
 * [Protocol Buffer](doc/protobuf)
   * [protobuf](doc/protobuf/protobuf.md)
 * [gRPC](doc/grpc)

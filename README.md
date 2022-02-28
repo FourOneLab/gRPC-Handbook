@@ -1,4 +1,4 @@
-# grpc-in-action
+# gRPC Handbook
 
 gRPC: Up and Running
 
