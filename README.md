@@ -1,4 +1,5 @@
 # grpc-in-action
+
 gRPC: Up and Running
 
 ## Protocol buffers
@@ -23,4 +24,3 @@ gRPC: Up and Running
 1. 生成服务定义的存根文件
 2. 实现该服务中远程方法的业务逻辑
 3. 创建服务器，监听特定的端口并注册该服务
-
