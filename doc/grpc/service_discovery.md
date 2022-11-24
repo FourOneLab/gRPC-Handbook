@@ -16,6 +16,10 @@
 
 ## 服务发现
 
+gRPC 中进行服务发现的时候，涉及到的接口和类有如下这些。
+
+![class](/resources/resolver-class.png)
+
 gRPC 提供了自定义 Resolver 的能力来实现服务发现，通过 Register 方法来进行注册自定义的 Resolver，自定义的 Resolver 需要实现 `Builder` 接口，定义如下：
 
 ```go
@@ -34,6 +38,10 @@ type Builder interface {
 
 `Scheme()`返回一个stirng。注册的 `Resolver` 会被保存在一个全局的变量 m 中，m 是一个 map，这个 map 的 key 即为 `Scheme()` 方法返回的字符串。也就是多个 Resolver 是通过Scheme 来进行区分的，所以我们定义 `Resolver` 的时候 Scheme 不要重复，否则 Resolver 就会被覆盖。
 通过下面的示例代码，来看一下自定义的 Builer 是在哪里被执行的。
+
+整个的流程如下图所示。
+
+![process](/resources/resolver-process.png)
 
 ## 实例代码
 

@@ -8,6 +8,7 @@
   * [Service Discovery](doc/grpc/service_discovery.md)
   * [Load Balance](doc/grpc/load_balance.md)
   * [gRPC On Kubernetes](doc/grpc/grpc_on_kubernetes.md)
+  * [connection](doc/grpc/connection.md)
 * [HTTP2](doc/http2)
   * [HTTP2](doc/http2/http2.md)
 * [REST](doc/rest)
